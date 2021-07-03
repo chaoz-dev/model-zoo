@@ -31,10 +31,8 @@ WORKDIR $LIB_DIR
 ENV CENTERMASK2_DIR=$LIB_DIR/centermask2
 
 ARG VOVNET2_MODELS="\
- https://dl.dropbox.com/s/lw8nxajv1tim8gr/centermask2-V-57-eSE-FPN-ms-3x.pth    \
- https://dl.dropbox.com/s/1f64azqyd2ot6qq/centermask-V-57-eSE-dcn-FPN-ms-3x.pth \
- https://dl.dropbox.com/s/c6n79x83xkdowqc/centermask2-V-99-eSE-FPN-ms-3x.pth    \
- https://dl.dropbox.com/s/atuph90nzm7s8x8/centermask-V-99-eSE-dcn-FPN-ms-3x.pth"
+ https://dl.dropbox.com/s/lw8nxajv1tim8gr/centermask2-V-57-eSE-FPN-ms-3x.pth \
+ https://dl.dropbox.com/s/c6n79x83xkdowqc/centermask2-V-99-eSE-FPN-ms-3x.pth"
 
 RUN git clone https://github.com/youngwanLEE/centermask2.git
 
