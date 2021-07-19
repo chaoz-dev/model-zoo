@@ -29,7 +29,7 @@ ARG VOVNET2_MODELS="\
  https://dl.dropbox.com/s/lw8nxajv1tim8gr/centermask2-V-57-eSE-FPN-ms-3x.pth \
  https://dl.dropbox.com/s/c6n79x83xkdowqc/centermask2-V-99-eSE-FPN-ms-3x.pth"
 
-RUN git clone https://github.com/chaoz-dev/centermask2.git --branch custom-dataset
+RUN git clone https://github.com/chaoz-dev/centermask2.git --single-branch --branch custom-dataset
 
 WORKDIR $CENTERMASK2_DIR
 RUN parallel --will-cite --jobs 0 'wget -nv -nc {}' ::: $VOVNET2_MODELS

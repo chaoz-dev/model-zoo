@@ -49,7 +49,7 @@ ARG CENTERNET_MODELS="\
  # 1-5bT5ZF8bXriJ-wAvOjJFrBLvZV2-mlV \
  # 1PFcEqN0KjFuq9XaqzB7TkVD3pvXZx04e"
 
-RUN git clone --single-branch --branch remove-stale-dcn https://github.com/chaoz-dev/CenterNet.git
+RUN git clone https://github.com/chaoz-dev/CenterNet.git --single-branch --branch remove-stale-dcn
 
 WORKDIR $CENTERNET_DIR
 RUN pip install -r requirements.txt \
