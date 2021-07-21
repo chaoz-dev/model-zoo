@@ -23,7 +23,7 @@ docker bulid -t centernet:latest .
 
 2. Run the docker image (in non-interactive mode).
 ```
-docker run --gpus all --rm centernet:latest python src/test.py ctdet --arch <arch> --exp_id <name> --keep_res --load_model <model>
+docker run --gpus all --rm centernet:latest python src/test.py ctdet --arch <arch> --exp_id <name> --keep_res --load_model <model> --not_prefetch_test --dataset custom
 ```
 
 Currently, only the following CenterNet models are included in the built image:
@@ -34,7 +34,7 @@ Currently, only the following CenterNet models are included in the built image:
 
 For example:
 ```
-docker run --gpus all --rm centernet:latest python src/test.py ctdet --arch resdcn_101 --exp_id resdcn101 --keep_res --load_model ctdet_coco_resdcn101.pth
+docker run --gpus all --rm centernet:latest python src/test.py ctdet --arch resdcn_101 --exp_id resdcn101 --keep_res --load_model ctdet_coco_resdcn101.pth --not_prefetch_test --dataset custom
 ```
 
 3. Check output.
